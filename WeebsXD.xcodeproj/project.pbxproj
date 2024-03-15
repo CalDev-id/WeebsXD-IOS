@@ -11,6 +11,7 @@
 		2E75E81B2BA4064000AE866A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E81A2BA4064000AE866A /* ContentView.swift */; };
 		2E75E81D2BA4064100AE866A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E75E81C2BA4064100AE866A /* Assets.xcassets */; };
 		2E75E8202BA4064100AE866A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E75E81F2BA4064100AE866A /* Preview Assets.xcassets */; };
+		2E75E8272BA406FB00AE866A /* CustomTapBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E8262BA406FB00AE866A /* CustomTapBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2E75E81A2BA4064000AE866A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E75E81C2BA4064100AE866A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E75E81F2BA4064100AE866A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2E75E8262BA406FB00AE866A /* CustomTapBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				2E75E8182BA4064000AE866A /* WeebsXDApp.swift */,
 				2E75E81A2BA4064000AE866A /* ContentView.swift */,
+				2E75E8262BA406FB00AE866A /* CustomTapBar.swift */,
 				2E75E81C2BA4064100AE866A /* Assets.xcassets */,
 				2E75E81E2BA4064100AE866A /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E75E8272BA406FB00AE866A /* CustomTapBar.swift in Sources */,
 				2E75E81B2BA4064000AE866A /* ContentView.swift in Sources */,
 				2E75E8192BA4064000AE866A /* WeebsXDApp.swift in Sources */,
 			);
