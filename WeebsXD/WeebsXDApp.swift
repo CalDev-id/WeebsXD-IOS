@@ -11,7 +11,7 @@ import SwiftUI
 struct WeebsXDApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentViews().background(.thinMaterial)
         }
     }
 }

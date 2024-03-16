@@ -8,19 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		2E75E8192BA4064000AE866A /* WeebsXDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E8182BA4064000AE866A /* WeebsXDApp.swift */; };
-		2E75E81B2BA4064000AE866A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E81A2BA4064000AE866A /* ContentView.swift */; };
 		2E75E81D2BA4064100AE866A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E75E81C2BA4064100AE866A /* Assets.xcassets */; };
 		2E75E8202BA4064100AE866A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E75E81F2BA4064100AE866A /* Preview Assets.xcassets */; };
-		2E75E8272BA406FB00AE866A /* CustomTapBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E8262BA406FB00AE866A /* CustomTapBar.swift */; };
+		2E75E82C2BA4235800AE866A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E82B2BA4235800AE866A /* HomeView.swift */; };
+		2E75E82E2BA4270F00AE866A /* ContentViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E82D2BA4270F00AE866A /* ContentViews.swift */; };
+		2E75E8302BA4275400AE866A /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E82F2BA4275400AE866A /* CustomTabBar.swift */; };
+		2E75E8322BA44D0000AE866A /* ListRecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E8312BA44D0000AE866A /* ListRecentView.swift */; };
+		2E75E8342BA572CB00AE866A /* ListPopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E8332BA572CB00AE866A /* ListPopularView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E75E8152BA4064000AE866A /* WeebsXD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeebsXD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E75E8182BA4064000AE866A /* WeebsXDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeebsXDApp.swift; sourceTree = "<group>"; };
-		2E75E81A2BA4064000AE866A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2E75E81C2BA4064100AE866A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E75E81F2BA4064100AE866A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2E75E8262BA406FB00AE866A /* CustomTapBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTapBar.swift; sourceTree = "<group>"; };
+		2E75E82B2BA4235800AE866A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2E75E82D2BA4270F00AE866A /* ContentViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViews.swift; sourceTree = "<group>"; };
+		2E75E82F2BA4275400AE866A /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		2E75E8312BA44D0000AE866A /* ListRecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRecentView.swift; sourceTree = "<group>"; };
+		2E75E8332BA572CB00AE866A /* ListPopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPopularView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				2E75E8182BA4064000AE866A /* WeebsXDApp.swift */,
-				2E75E81A2BA4064000AE866A /* ContentView.swift */,
-				2E75E8262BA406FB00AE866A /* CustomTapBar.swift */,
+				2E75E82A2BA4230000AE866A /* ViewModels */,
+				2E75E8292BA422F200AE866A /* Views */,
+				2E75E8282BA422E300AE866A /* Models */,
 				2E75E81C2BA4064100AE866A /* Assets.xcassets */,
 				2E75E81E2BA4064100AE866A /* Preview Content */,
 			);
@@ -68,6 +75,32 @@
 				2E75E81F2BA4064100AE866A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2E75E8282BA422E300AE866A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2E75E8292BA422F200AE866A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E75E82B2BA4235800AE866A /* HomeView.swift */,
+				2E75E8332BA572CB00AE866A /* ListPopularView.swift */,
+				2E75E8312BA44D0000AE866A /* ListRecentView.swift */,
+				2E75E82F2BA4275400AE866A /* CustomTabBar.swift */,
+				2E75E82D2BA4270F00AE866A /* ContentViews.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E75E82A2BA4230000AE866A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E75E8272BA406FB00AE866A /* CustomTapBar.swift in Sources */,
-				2E75E81B2BA4064000AE866A /* ContentView.swift in Sources */,
+				2E75E8342BA572CB00AE866A /* ListPopularView.swift in Sources */,
+				2E75E8302BA4275400AE866A /* CustomTabBar.swift in Sources */,
+				2E75E82C2BA4235800AE866A /* HomeView.swift in Sources */,
 				2E75E8192BA4064000AE866A /* WeebsXDApp.swift in Sources */,
+				2E75E82E2BA4270F00AE866A /* ContentViews.swift in Sources */,
+				2E75E8322BA44D0000AE866A /* ListRecentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

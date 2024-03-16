@@ -1,0 +1,62 @@
+//
+//  ContentViews.swift
+//  WeebsXD
+//
+//  Created by Heical Chandra on 15/03/24.
+//
+
+import SwiftUI
+
+struct ContentViews: View {
+    @State private var tabSelected: Tab = .house
+    
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
+    
+    var body: some View {
+        ZStack {
+            VStack {
+                TabView(selection: $tabSelected) {
+                    ForEach(Tab.allCases, id: \.self) { tab in
+                        getView(for: tab)
+                            .tag(tab)
+                    }
+//                    ForEach(Tab.allCases, id: \.rawValue) { tab in
+//                        HStack {
+//                            Image(systemName: tab.rawValue)
+//                            Text("\(tab.rawValue.capitalized)")
+//                                .bold()
+//
+//                                .animation(nil, value: tabSelected)
+//                        }
+//                        .tag(tab)
+//                    }
+                }
+            }
+            VStack {
+                Spacer()
+                CustomTabBar(selectedTab: $tabSelected)
+            }
+        }
+    }
+    
+    func getView(for tab: Tab) -> some View {
+        switch tab {
+        case .house:
+            return AnyView(HomeView())
+        case .message:
+            return AnyView(Text("Heart View").font(.title).tag(tab))
+        case .book:
+            return AnyView(Text("Person View").font(.title).tag(tab))
+        case .bookmark:
+            return AnyView(Text("House View").font(.title).tag(tab))
+        case .person:
+            return AnyView(Text("House View").font(.title).tag(tab))
+        }
+    }
+}
+
+#Preview {
+    ContentViews().previewInterfaceOrientation(.portrait)
+}
