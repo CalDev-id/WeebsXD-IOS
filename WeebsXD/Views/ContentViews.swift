@@ -46,9 +46,9 @@ struct ContentViews: View {
         case .house:
             return AnyView(HomeView())
         case .message:
-            return AnyView(Text("Heart View").font(.title).tag(tab))
+            return AnyView(StatsView())
         case .book:
-            return AnyView(Text("Person View").font(.title).tag(tab))
+            return AnyView(LibraryView())
         case .bookmark:
             return AnyView(Text("House View").font(.title).tag(tab))
         case .person:

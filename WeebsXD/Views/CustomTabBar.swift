@@ -42,11 +42,11 @@ struct CustomTabBar: View {
         case .message:
             return "Message"
         case .book:
-            return "person"
+            return "Library"
         case .bookmark:
-            return "leaf"
+            return "Bookmark"
         case .person:
-            return "gearshape"
+            return "Profile"
         }
     }
     

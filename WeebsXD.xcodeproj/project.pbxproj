@@ -15,6 +15,8 @@
 		2E75E8302BA4275400AE866A /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E82F2BA4275400AE866A /* CustomTabBar.swift */; };
 		2E75E8322BA44D0000AE866A /* ListRecentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E8312BA44D0000AE866A /* ListRecentView.swift */; };
 		2E75E8342BA572CB00AE866A /* ListPopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E8332BA572CB00AE866A /* ListPopularView.swift */; };
+		2E75E8362BA5ADD200AE866A /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E8352BA5ADD200AE866A /* LibraryView.swift */; };
+		2E75E8382BA69B3D00AE866A /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E8372BA69B3D00AE866A /* StatsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		2E75E82F2BA4275400AE866A /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		2E75E8312BA44D0000AE866A /* ListRecentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRecentView.swift; sourceTree = "<group>"; };
 		2E75E8332BA572CB00AE866A /* ListPopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPopularView.swift; sourceTree = "<group>"; };
+		2E75E8352BA5ADD200AE866A /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		2E75E8372BA69B3D00AE866A /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +93,9 @@
 			children = (
 				2E75E82B2BA4235800AE866A /* HomeView.swift */,
 				2E75E8332BA572CB00AE866A /* ListPopularView.swift */,
+				2E75E8352BA5ADD200AE866A /* LibraryView.swift */,
 				2E75E8312BA44D0000AE866A /* ListRecentView.swift */,
+				2E75E8372BA69B3D00AE866A /* StatsView.swift */,
 				2E75E82F2BA4275400AE866A /* CustomTabBar.swift */,
 				2E75E82D2BA4270F00AE866A /* ContentViews.swift */,
 			);
@@ -173,9 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E75E8362BA5ADD200AE866A /* LibraryView.swift in Sources */,
 				2E75E8342BA572CB00AE866A /* ListPopularView.swift in Sources */,
 				2E75E8302BA4275400AE866A /* CustomTabBar.swift in Sources */,
 				2E75E82C2BA4235800AE866A /* HomeView.swift in Sources */,
+				2E75E8382BA69B3D00AE866A /* StatsView.swift in Sources */,
 				2E75E8192BA4064000AE866A /* WeebsXDApp.swift in Sources */,
 				2E75E82E2BA4270F00AE866A /* ContentViews.swift in Sources */,
 				2E75E8322BA44D0000AE866A /* ListRecentView.swift in Sources */,
