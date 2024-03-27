@@ -7,10 +7,13 @@
 
 import SwiftUI
 import FirebaseCore
-//import FirebaseAuth
+import FirebaseFirestore
+import FirebaseAuth
 
 @main
 struct WeebsXDApp: App {    
+    @StateObject var authViewModel = AuthViewModel()
+
     init(){
         FirebaseApp.configure()
     }
@@ -19,9 +22,13 @@ struct WeebsXDApp: App {
         WindowGroup {
 //            ContentViews().background(.thinMaterial)
             NavigationView{
-                SubscriptionView()
-//                APIFetch()
-            }
+                if authViewModel.isLoggedIn {
+                    ContentViews()
+                } else {
+                    SubscriptionView()
+                }
+            }            
+            .environmentObject(authViewModel)
         }
     }
 }

@@ -52,9 +52,9 @@ struct ContentViews: View {
         case .book:
             return AnyView(LibraryView())
         case .bookmark:
-            return AnyView(Text("House View").font(.title).tag(tab))
+            return AnyView(APIFetch())
         case .person:
-            return AnyView(Text("House View").font(.title).tag(tab))
+            return AnyView(ProfileView())
         }
     }
 }

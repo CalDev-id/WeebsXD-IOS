@@ -95,6 +95,8 @@
 		2E701EE22BAC0D8500EF65FA /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2E701EE12BAC0D8500EF65FA /* FirebaseStorageCombine-Community */; };
 		2E701EE52BAC0FDA00EF65FA /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E701EE42BAC0FDA00EF65FA /* RegisterView.swift */; };
 		2E701F272BB1468400EF65FA /* APIFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E701F262BB1468400EF65FA /* APIFetch.swift */; };
+		2E701F2A2BB29D4000EF65FA /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E701F292BB29D4000EF65FA /* AuthViewModel.swift */; };
+		2E701F2C2BB2A2CC00EF65FA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E701F2B2BB2A2CC00EF65FA /* ProfileView.swift */; };
 		2E75E8192BA4064000AE866A /* WeebsXDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E75E8182BA4064000AE866A /* WeebsXDApp.swift */; };
 		2E75E81D2BA4064100AE866A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E75E81C2BA4064100AE866A /* Assets.xcassets */; };
 		2E75E8202BA4064100AE866A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E75E81F2BA4064100AE866A /* Preview Assets.xcassets */; };
@@ -119,6 +121,8 @@
 		2E701EAB2BABFA2E00EF65FA /* CreateAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountController.swift; sourceTree = "<group>"; };
 		2E701EE42BAC0FDA00EF65FA /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		2E701F262BB1468400EF65FA /* APIFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFetch.swift; sourceTree = "<group>"; };
+		2E701F292BB29D4000EF65FA /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		2E701F2B2BB2A2CC00EF65FA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		2E75E8152BA4064000AE866A /* WeebsXD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeebsXD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E75E8182BA4064000AE866A /* WeebsXDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeebsXDApp.swift; sourceTree = "<group>"; };
 		2E75E81C2BA4064100AE866A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -240,6 +244,15 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		2E701F282BB2673600EF65FA /* Onboard */ = {
+			isa = PBXGroup;
+			children = (
+				2E701E332BA81CA800EF65FA /* GenreView.swift */,
+				2E288E942BA717F4001EA2F1 /* SubscriptionView.swift */,
+			);
+			path = Onboard;
+			sourceTree = "<group>";
+		};
 		2E75E80C2BA4064000AE866A = {
 			isa = PBXGroup;
 			children = (
@@ -290,15 +303,15 @@
 		2E75E8292BA422F200AE866A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2E701F282BB2673600EF65FA /* Onboard */,
 				2E701EE32BAC0FBC00EF65FA /* Auth */,
 				2E701E3B2BAABEFE00EF65FA /* Components */,
 				2E75E82B2BA4235800AE866A /* HomeView.swift */,
 				2E75E8352BA5ADD200AE866A /* LibraryView.swift */,
+				2E701F2B2BB2A2CC00EF65FA /* ProfileView.swift */,
 				2E701F262BB1468400EF65FA /* APIFetch.swift */,
-				2E701E332BA81CA800EF65FA /* GenreView.swift */,
 				2E701E352BA8349E00EF65FA /* DetailView.swift */,
 				2E75E8372BA69B3D00AE866A /* StatsView.swift */,
-				2E288E942BA717F4001EA2F1 /* SubscriptionView.swift */,
 				2E75E82D2BA4270F00AE866A /* ContentViews.swift */,
 			);
 			path = Views;
@@ -308,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				2E701E392BAABE2000EF65FA /* AnimeViewModel.swift */,
+				2E701F292BB29D4000EF65FA /* AuthViewModel.swift */,
 				2E701EAB2BABFA2E00EF65FA /* CreateAccountController.swift */,
 			);
 			path = ViewModels;
@@ -476,6 +490,7 @@
 				2E75E8302BA4275400AE866A /* CustomTabBar.swift in Sources */,
 				2E701F272BB1468400EF65FA /* APIFetch.swift in Sources */,
 				2E75E82C2BA4235800AE866A /* HomeView.swift in Sources */,
+				2E701F2A2BB29D4000EF65FA /* AuthViewModel.swift in Sources */,
 				2E75E8382BA69B3D00AE866A /* StatsView.swift in Sources */,
 				2E75E8192BA4064000AE866A /* WeebsXDApp.swift in Sources */,
 				2E701EAC2BABFA2E00EF65FA /* CreateAccountController.swift in Sources */,
@@ -483,6 +498,7 @@
 				2E701E322BA7F7CC00EF65FA /* LoginView.swift in Sources */,
 				2E75E8322BA44D0000AE866A /* ListRecentView.swift in Sources */,
 				2E701EE52BAC0FDA00EF65FA /* RegisterView.swift in Sources */,
+				2E701F2C2BB2A2CC00EF65FA /* ProfileView.swift in Sources */,
 				2E701E342BA81CA800EF65FA /* GenreView.swift in Sources */,
 				2E701E3A2BAABE2000EF65FA /* AnimeViewModel.swift in Sources */,
 			);
